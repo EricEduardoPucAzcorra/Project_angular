@@ -16,6 +16,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppRoutingModule} from "./app-routing.module";
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { RouterModule } from '@angular/router';
+//api news letter
+import {NewsletterService} from "./services/newsletter.service";
 
 //aqui se registran los componnetes.
 
@@ -36,7 +38,8 @@ import { RouterModule } from '@angular/router';
         RouterModule,
     ],
     providers: [
-        LessonsService
+        LessonsService,
+        NewsletterService
     ],
     bootstrap: [AppComponent]
 })
